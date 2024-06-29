@@ -24,7 +24,7 @@ do
     else
 	
 		newport=`expr $port + 1`
-        echo $(date +"%y-%m-%d %H:%M:%S") "$domain:$port Fail! " >> telnet_domain_failed.txt
+        	echo $(date +"%y-%m-%d %H:%M:%S") "$domain:$port Fail! " >> telnet_domain_failed.txt
 		echo "$domain|$newport|" >> telnet_node_checked.txt
 		
 		if [ "$domain" = "test.com" ]; then
